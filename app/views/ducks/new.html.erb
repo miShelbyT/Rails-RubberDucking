@@ -1,0 +1,12 @@
+<h1>New Duck</h1>
+
+<% if flash[:user_errors] %>
+<%    flash[:user_errors].each do |u_error| %>
+
+    <strong><p style="color:red"> <%= u_error %> </p></strong>
+
+    <% end %>
+
+<% end %>
+
+<%= render 'form' %>
